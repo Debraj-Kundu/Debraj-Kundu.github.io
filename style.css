@@ -1,0 +1,15 @@
+#jumbo-cont{
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.jumbotron{
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+#my-pic{
+  border-radius: 10%;
+}
+#jumbo-header-div{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
