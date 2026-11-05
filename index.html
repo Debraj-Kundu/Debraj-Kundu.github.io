@@ -1,64 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <title>Debraj Kundu</title>
-  <!--CSS import-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Debraj Kundu — Backend &amp; Systems Engineer</title>
+  <meta name="description" content="Debraj Kundu — Backend & distributed systems engineer focused on scalability, performance, reliability, security and cost, building AI-powered products.">
+  <meta property="og:title" content="Debraj Kundu — Backend &amp; Systems Engineer">
+  <meta property="og:description" content="Backend architecture · Distributed systems · Scalability · AI-powered products">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="bg" aria-hidden="true"><span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span><span class="grid"></span></div>
 
-  <!--Navbar-->
-  <header>
-    <nav class="navbar navbar-dark navbar-expand-sm bg-primary">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#">Debraj Kundu</a>
-        <div class="collapse navbar-collapse" id="Navbar">
-          <ul class="navbar-nav">
-            <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-          </ul>
-        </div>
-
-      </div>
+  <header class="nav">
+    <a href="#top" class="logo">DK<span>.</span></a>
+    <nav>
+      <a href="#strengths">Strengths</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
     </nav>
+    <a class="btn btn-sm" href="https://drive.google.com/file/d/1jLPAebWRhFMMu4E2gBcssO7_WEUHV_Kb/view" target="_blank" rel="noopener">Resume</a>
   </header>
-  <!--Jumbotron-->
-  <div class="jumbotron">
-    <div class="container" id="jumbo-cont">
-      <div class="row align-items-center h-100">
-        <div class="col-12 col-lg-9 mx-auto">
-          <div class="container">
-            <h2>Hey There!</h2>
-            <p>How are you?!. Glad to have you here, have a nice day ^_^</p>
-          </div>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow h-in"><span class="dot"></span> Open to remote opportunities</p>
+        <h1 class="h-in">Hi, I'm <em>Debraj Kundu</em>.<br>I architect backends that <span class="rotate" aria-live="polite">scale to millions.</span></h1>
+        <p class="lead h-in">Backend &amp; distributed systems engineer who designs services for <b>scale, performance, reliability, security and cost</b>, and builds AI-powered products on top of them, from LLM apps to real-time Voice AI.</p>
+        <div class="cta h-in">
+          <a class="btn" href="https://drive.google.com/file/d/1jLPAebWRhFMMu4E2gBcssO7_WEUHV_Kb/view" target="_blank" rel="noopener">View Resume ↗</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
         </div>
-        <div class="col-12 col-lg-3 mx-auto justify-content-right">
-          <img src="./pro pic.jpeg" id="my-pic" class="img-fluid" height="300" width="300">
+        <div class="socials h-in">
+          <a href="https://github.com/Debraj-Kundu" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com/in/debrajkundu31" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://leetcode.com/u/not_so_good" target="_blank" rel="noopener">LeetCode</a>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <!--JS imports-->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>F
+    <!-- STATS -->
+    <section class="stats">
+      <div class="stat reveal"><b data-count="6">0</b><span>M+ requests / day served after scaling on AKS</span></div>
+      <div class="stat reveal"><b data-count="99.99" data-dec="2">0</b><span>% processing reliability, idempotent pipelines</span></div>
+      <div class="stat reveal"><b data-count="40">0</b><span>% bandwidth cut with direct SAS uploads</span></div>
+      <div class="stat reveal"><b data-count="1.5" data-dec="1">0</b><span>M+ voice AI calls handled monthly</span></div>
+    </section>
+
+    <!-- STRENGTHS -->
+    <section id="strengths" class="section">
+      <h2 class="title reveal"><span>01</span> What I Bring</h2>
+      <div class="pillars">
+        <article class="card pillar reveal">
+          <span class="ico" aria-hidden="true">↗</span>
+          <h3>Scalability</h3>
+          <p>Stateless services that scale out across pods, with horizontal fan-out for real-time traffic.</p>
+          <ul><li>Moved backend services to <b>AKS</b> and scaled to <b>6M+ requests/day</b></li><li><b>Redis Pub/Sub</b> so WebSockets scale horizontally</li></ul>
+        </article>
+        <article class="card pillar reveal">
+          <span class="ico" aria-hidden="true">⚡</span>
+          <h3>Performance Optimization</h3>
+          <p>Profiling hot paths, caching where it counts, and cutting work the system never needed to do.</p>
+          <ul><li>Redis caching &amp; background jobs: <b>40%</b> better responsiveness</li><li>RTK Query &amp; debouncing: <b>30%</b> faster app, <b>35%</b> more responsive search</li></ul>
+        </article>
+        <article class="card pillar reveal">
+          <span class="ico" aria-hidden="true">◎</span>
+          <h3>Reliability</h3>
+          <p>Idempotent, retry-safe, queue-backed workflows that recover cleanly from failure.</p>
+          <ul><li>Async media pipeline with retries &amp; recovery: <b>99.99%</b> reliability</li><li>Decoupled delivery on <b>Azure Service Bus</b> to 200K+ patients monthly</li></ul>
+        </article>
+        <article class="card pillar reveal">
+          <span class="ico" aria-hidden="true">⛨</span>
+          <h3>Security &amp; Compliance</h3>
+          <p>Least-privilege access, encrypted data paths and regulated-industry compliance by design.</p>
+          <ul><li>Enterprise <b>RBAC</b> securing <b>100K+</b> user accounts</li><li>SAS-token uploads with encryption, <b>NHS England / GDPR</b> compliant</li></ul>
+        </article>
+        <article class="card pillar reveal">
+          <span class="ico" aria-hidden="true">₹</span>
+          <h3>Cost Optimization</h3>
+          <p>Architectures that do more with less: offloading traffic, serverless where it fits, automation over manual work.</p>
+          <ul><li>Direct-to-storage uploads cut bandwidth by <b>40%</b></li><li>Serverless Azure Functions for bursty workloads; AI triage cut manual effort <b>~40%</b></li></ul>
+        </article>
+        <article class="card pillar reveal">
+          <span class="ico" aria-hidden="true">⌘</span>
+          <h3>Architecture &amp; System Design</h3>
+          <p>Event-driven microservices, clear service boundaries and pragmatic trade-offs that teams can run.</p>
+          <ul><li>Event-driven notifications, pub/sub messaging, async pipelines</li><li>CI/CD quality gates: <b>25%</b> fewer defects, <b>35%</b> faster deploys</li></ul>
+        </article>
+      </div>
+      <div class="keywords reveal">
+        <span>Also strong in</span>
+        <div class="tags lg"><i>Distributed Systems</i><i>Microservices</i><i>Event-Driven Architecture</i><i>REST &amp; WebSocket API Design</i><i>Caching Strategies</i><i>Message Queues</i><i>Database Design &amp; SQL Tuning</i><i>Containerization &amp; Kubernetes</i><i>CI/CD</i><i>Observability &amp; Monitoring</i><i>Authentication &amp; RBAC</i><i>Data Structures &amp; Algorithms</i><i>Code Reviews</i><i>End-to-End Ownership</i><i>Cross-functional Collaboration</i><i>Agile Delivery</i></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2 class="title reveal"><span>02</span> About</h2>
+      <div class="about">
+        <div class="reveal">
+          <p>I'm a <b>backend-focused engineer</b> based in <b>Gurugram, India</b>. My core work is designing and running the services underneath products: APIs, queues, caches, data stores and the infrastructure that keeps them fast, available and affordable as traffic grows.</p>
+          <p>At <b>PropertyLoop (UK)</b> I scaled a healthcare platform to <b>6M+ requests/day</b> on Kubernetes, built event-driven notification and secure upload pipelines under NHS England and GDPR rules, and put a multi-agent Voice AI system into production on top of that foundation.</p>
+          <p>Before that, at <b>Nagarro</b>, I shipped enterprise RBAC, performance work and CI/CD pipelines for a CRM used by 100K+ users. I care about sound architecture, measurable results and systems that stay quiet in production.</p>
+        </div>
+        <ul class="facts reveal">
+          <li><span>Role</span>AI Full Stack Developer</li>
+          <li><span>Primary</span>Backend · Architecture</li>
+          <li><span>Stack</span>Node.js · TypeScript · Python</li>
+          <li><span>Also</span>LLM apps · Voice AI</li>
+          <li><span>Experience</span>3+ years</li>
+          <li><span>Education</span>B.Tech CSE, LPU (2023)</li>
+          <li><span>Location</span>Gurugram · Remote-friendly</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <h2 class="title reveal"><span>03</span> Experience</h2>
+      <div class="timeline">
+        <article class="job reveal">
+          <div class="job-head">
+            <div><h3>AI Full Stack Developer</h3><p class="org">PropertyLoop (UK) · Remote</p></div>
+            <time>Feb 2025 — Present</time>
+          </div>
+          <ul>
+            <li><span class="pill">Scalability</span>Scaled the platform to <b>6M+ requests/day</b> by migrating backend services to <b>Azure Kubernetes Service</b> and using <b>Redis Pub/Sub</b> for horizontally scalable WebSockets.</li>
+            <li><span class="pill">Reliability</span>Owned an event-driven <b>Email/SMS notification system</b> on Azure Functions, Service Bus and Twilio, reaching <b>200K+ patients monthly</b>.</li>
+            <li><span class="pill">Security · Cost</span>Built a secure <b>SAS-based file upload pipeline</b>, cutting bandwidth by <b>40%</b> with encryption and NHS England GDPR compliance.</li>
+            <li><span class="pill">AI Systems</span>Engineered a <b>multi-agent Voice AI triage bot</b> with LiveKit, OpenAI GPT-4.1, Deepgram, ElevenLabs and Twilio, serving <b>1.5M+ patient calls monthly</b> and saving hundreds of staff hours.</li>
+            <li><span class="pill">Efficiency</span>Led an <b>AI call-classification agent</b> (medical / admin subtypes / unknown), improving accuracy and cutting manual triage effort by <b>~40%</b>.</li>
+            <li><span class="pill">Impact</span>Turned business requirements into scalable technical solutions with product &amp; engineering, contributing to <b>2× client growth</b>.</li>
+          </ul>
+          <div class="tags"><i>Node.js</i><i>TypeScript</i><i>Azure</i><i>AKS</i><i>Redis</i><i>Service Bus</i><i>Azure Functions</i><i>WebSockets</i><i>LiveKit</i><i>OpenAI</i><i>Twilio</i></div>
+        </article>
+        <article class="job reveal">
+          <div class="job-head">
+            <div><h3>Software Engineer</h3><p class="org">Nagarro · Gurugram, India</p></div>
+            <time>Mar 2023 — Feb 2025</time>
+          </div>
+          <ul>
+            <li><span class="pill">Security</span>Implemented enterprise-grade <b>Role-Based Access Control</b> with conditional routing, permission-gated UI and admin controls, securing <b>100K+ user accounts</b>.</li>
+            <li><span class="pill">Performance</span>Used <b>Redux &amp; RTK Query</b> caching for <b>30%</b> faster performance and <b>20%</b> quicker page loads.</li>
+            <li><span class="pill">Cost · Load</span>Rebuilt global search with a <b>custom debounce hook</b>, cutting redundant API calls and backend load while improving responsiveness by <b>35%</b>.</li>
+            <li><span class="pill">DevOps</span>Set up <b>Azure DevOps CI/CD</b> with quality gates, reducing defects by <b>25%</b> and deployment time by <b>35%</b>.</li>
+            <li><span class="pill">Product</span>Shipped critical CRM features and fixes in <b>React.js</b>, driving a <b>15%</b> lift in user engagement.</li>
+          </ul>
+          <div class="tags"><i>React</i><i>Redux</i><i>RTK Query</i><i>TypeScript</i><i>Azure DevOps</i></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2 class="title reveal"><span>04</span> Featured Work</h2>
+      <div class="projects">
+        <article class="card feature reveal">
+          <p class="kicker">Production · Architecture &amp; Scale</p>
+          <h3>Healthcare Platform at 6M req/day</h3>
+          <p>Re-architected the backend for horizontal scale: containerised services on AKS, Redis Pub/Sub so real-time WebSocket traffic fans out across pods, and direct-to-storage SAS uploads that take file bandwidth off the API tier, all under NHS England / GDPR rules.</p>
+          <div class="flow" aria-hidden="true">
+            <span>Clients</span><em></em><span>AKS services</span><em></em><span>Redis Pub/Sub</span><em></em><span>WebSocket pods</span>
+          </div>
+          <div class="tags"><i>AKS</i><i>Docker</i><i>Redis Pub/Sub</i><i>WebSockets</i><i>Azure Blob SAS</i></div>
+        </article>
+        <article class="card reveal">
+          <p class="kicker">Aug — Sep 2026 · Side project</p>
+          <h3>MomentMatch</h3>
+          <p>AI-powered photo platform with prompt-driven semantic search using <b>InsightFace</b> and <b>CLIP</b> embeddings over a vast library.</p>
+          <ul>
+            <li>Idempotent async media pipeline with retries &amp; recovery — <b>99.99%</b> reliability.</li>
+            <li>Redis caching &amp; background jobs — <b>40%</b> better responsiveness under load.</li>
+          </ul>
+          <div class="tags"><i>FastAPI</i><i>Spring Boot</i><i>Next.js</i><i>Qdrant</i><i>PostgreSQL</i><i>Redis</i></div>
+        </article>
+        <article class="card reveal">
+          <p class="kicker">Production · Event-driven</p>
+          <h3>Patient Notification Platform</h3>
+          <p>Queue-backed Email/SMS delivery on Azure Functions and Service Bus: decoupled, retry-safe and pay-per-use, reaching 200K+ patients monthly.</p>
+          <div class="tags"><i>Azure Functions</i><i>Service Bus</i><i>Twilio</i></div>
+        </article>
+        <article class="card reveal">
+          <p class="kicker">Production · AI Systems</p>
+          <h3>Multi-Agent Voice AI Triage</h3>
+          <p>Real-time voice agents that answer patient calls, classify medical vs admin intent and route them, handling 1.5M+ calls a month.</p>
+          <div class="tags"><i>LiveKit</i><i>OpenAI</i><i>Deepgram</i><i>ElevenLabs</i><i>Twilio</i></div>
+        </article>
+      </div>
+      <p class="more reveal"><a href="https://github.com/Debraj-Kundu" target="_blank" rel="noopener">See more on GitHub →</a></p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2 class="title reveal"><span>05</span> Skills</h2>
+      <div class="skills">
+        <div class="card reveal"><h3>Backend &amp; APIs</h3><div class="tags lg"><i>Node.js</i><i>Express.js</i><i>NestJS</i><i>FastAPI</i><i>Spring Boot</i><i>Hibernate</i><i>REST APIs</i><i>WebSockets</i></div></div>
+        <div class="card reveal"><h3>Architecture</h3><div class="tags lg"><i>System Design</i><i>Microservices</i><i>Event-Driven</i><i>Pub/Sub</i><i>Caching</i><i>Idempotency &amp; Retries</i><i>RBAC</i></div></div>
+        <div class="card reveal"><h3>Data &amp; Messaging</h3><div class="tags lg"><i>PostgreSQL</i><i>MySQL</i><i>MongoDB</i><i>Redis</i><i>Elasticsearch</i><i>Qdrant</i><i>Kafka</i><i>RabbitMQ</i><i>Azure Service Bus</i></div></div>
+        <div class="card reveal"><h3>Cloud &amp; DevOps</h3><div class="tags lg"><i>Azure</i><i>AWS</i><i>Docker</i><i>Kubernetes</i><i>Azure Functions</i><i>CI/CD</i><i>Vercel</i><i>Git</i></div></div>
+        <div class="card reveal"><h3>Languages</h3><div class="tags lg"><i>TypeScript</i><i>JavaScript</i><i>Python</i><i>Java</i><i>SQL</i></div></div>
+        <div class="card reveal"><h3>AI &amp; LLM</h3><div class="tags lg"><i>LLM Integration</i><i>RAG</i><i>MCP</i><i>LangGraph</i><i>OpenAI</i><i>Azure OpenAI</i><i>LiveKit</i><i>Deepgram</i><i>ElevenLabs</i></div></div>
+        <div class="card reveal"><h3>Observability</h3><div class="tags lg"><i>Datadog</i><i>Grafana</i><i>Logging &amp; Alerting</i></div></div>
+        <div class="card reveal"><h3>Frontend</h3><div class="tags lg"><i>React.js</i><i>Next.js</i><i>Redux</i><i>RTK Query</i></div></div>
+        <div class="card reveal"><h3>Tooling</h3><div class="tags lg"><i>GitHub</i><i>Azure DevOps</i><i>Twilio</i><i>Claude Code</i><i>Cursor</i></div></div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS + EDUCATION -->
+    <section class="section">
+      <h2 class="title reveal"><span>06</span> Achievements &amp; Education</h2>
+      <div class="ach">
+        <div class="card reveal"><b class="big">800+</b><p>Algorithmic problems solved on LeetCode and similar platforms.</p></div>
+        <div class="card reveal"><b class="big">Top 14%</b><p>Max contest rating <b>1727</b>; world rank <b>2768 / 25K+</b> in Weekly Contest 422.</p></div>
+        <div class="card reveal"><b class="big">B.Tech</b><p>Computer Science, Lovely Professional University · 2019 — 2023.</p></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact reveal">
+      <h2>Let's build systems <em>that scale.</em></h2>
+      <p>Open to backend, platform and AI full stack roles, remote or on-site.</p>
+      <div class="cta center">
+        <a class="btn" href="mailto:debrajk27@gmail.com">debrajk27@gmail.com</a>
+        <a class="btn btn-ghost" href="https://drive.google.com/file/d/1jLPAebWRhFMMu4E2gBcssO7_WEUHV_Kb/view" target="_blank" rel="noopener">Download Resume ↗</a>
+      </div>
+      <div class="socials center">
+        <a href="https://github.com/Debraj-Kundu" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/debrajkundu31" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://leetcode.com/u/not_so_good" target="_blank" rel="noopener">LeetCode</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="yr"></span> Debraj Kundu · Built with care.</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="./script.js"></script>
 </body>
-
 </html>
