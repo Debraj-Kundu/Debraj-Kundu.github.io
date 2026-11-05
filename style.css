@@ -117,7 +117,19 @@ time { font: 13px var(--mono); color: var(--muted); }
 
 .projects { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .projects .feature { grid-column: span 2; }
-.projects .card:nth-child(2) { grid-row: span 2; }
+.projects .tall { grid-row: span 2; }
+.flagship { grid-column: 1 / -1; padding: 36px; border-color: rgba(127, 183, 169, .45); background: linear-gradient(135deg, rgba(127, 183, 169, .09), transparent 55%), var(--surface); box-shadow: 0 30px 80px -40px rgba(127, 183, 169, .35); }
+.flagship h3 { font-size: clamp(26px, 3.2vw, 34px); margin-bottom: 18px; }
+.flag-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.flag-head .kicker { margin: 0; }
+.flag-body { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.flag-body .flow { margin-top: 14px; }
+.flag-body ul { font-size: 14.5px; }
+.badge { display: inline-block; margin-right: 8px; padding: 2px 8px; border-radius: 6px; background: var(--accent); color: var(--bg); font-weight: 600; }
+.eyebrows { display: flex; flex-wrap: wrap; gap: 10px; }
+.eyebrow.new { color: var(--text); border-color: rgba(127, 183, 169, .45); transition: border-color .25s, transform .25s; }
+.eyebrow.new:hover { border-color: var(--accent); transform: translateY(-2px); }
+.eyebrow.new b { color: var(--bg); background: var(--accent); padding: 0 6px; border-radius: 4px; font-weight: 600; }
 .flow { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 22px; font: 12px var(--mono); }
 .flow span { padding: 6px 10px; background: var(--surface-2); border: 1px solid var(--line); border-radius: 8px; }
 .flow em { width: 24px; height: 2px; background: linear-gradient(90deg, var(--line) 0 50%, var(--accent) 50%) 0 0 / 200% 100%; animation: dash 1.6s linear infinite; }
@@ -150,7 +162,9 @@ footer { text-align: center; padding: 30px; color: var(--muted); font: 13px var(
   .hero { padding-top: 120px; }
   .stats { grid-template-columns: repeat(2, 1fr); }
   .about, .projects, .skills, .ach, .pillars { grid-template-columns: 1fr; }
-  .projects .feature, .projects .card:nth-child(2) { grid-column: auto; grid-row: auto; }
+  .projects .feature, .projects .tall, .flagship { grid-column: auto; grid-row: auto; }
+  .flag-body { grid-template-columns: 1fr; gap: 8px; }
+  .flagship { padding: 24px; }
 }
 @media (max-width: 480px) {
   .stat b { font-size: 32px; }

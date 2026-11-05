@@ -33,7 +33,10 @@
     <!-- HERO -->
     <section class="hero">
       <div class="hero-text">
-        <p class="eyebrow h-in"><span class="dot"></span> Open to remote opportunities</p>
+        <div class="eyebrows h-in">
+          <p class="eyebrow"><span class="dot"></span> Open to remote opportunities</p>
+          <a class="eyebrow new" href="#guru"><b>New</b> Guru, an AI voice interviewer →</a>
+        </div>
         <h1 class="h-in">Hi, I'm <em>Debraj Kundu</em>.<br>I architect backends that <span class="rotate" aria-live="polite">scale to millions.</span></h1>
         <p class="lead h-in">Backend &amp; distributed systems engineer who designs services for <b>scale, performance, reliability, security and cost</b>, and builds AI-powered products on top of them, from LLM apps to real-time Voice AI.</p>
         <div class="cta h-in">
@@ -164,6 +167,33 @@
     <section id="projects" class="section">
       <h2 class="title reveal"><span>04</span> Featured Work</h2>
       <div class="projects">
+        <article id="guru" class="card flagship reveal">
+          <div class="flag-head">
+            <p class="kicker"><span class="badge">Latest project</span> Nov 2026 · Full stack · Open source</p>
+            <a class="btn btn-sm btn-ghost" href="https://github.com/Debraj-Kundu/GURU-AI-INTERVIEWER" target="_blank" rel="noopener">View on GitHub ↗</a>
+          </div>
+          <h3>Guru: AI Voice Interviewer</h3>
+          <div class="flag-body">
+            <div>
+              <p>Recruiters set up a job with questions, scoring criteria and a company knowledge base. Guru plans the interview, a <b>LiveKit voice agent</b> runs it over an audio-only call from an invite link, and the transcript is scored per criterion with <b>evidence linked to transcript turns</b>. Scores stay advisory: a human makes the call.</p>
+              <div class="flow" aria-hidden="true">
+                <span>Next.js</span><em></em><span>FastAPI</span><em></em><span>Postgres · S3 · Qdrant</span>
+              </div>
+              <div class="flow" aria-hidden="true">
+                <span>Candidate</span><em></em><span>LiveKit Cloud</span><em></em><span>Interviewer agent</span><em></em><span>FastAPI /internal</span>
+              </div>
+            </div>
+            <ul>
+              <li><b>Secure ingestion:</b> presigned browser-to-S3 uploads with size limits; SSRF-checked URL fetching that respects robots.txt.</li>
+              <li><b>Resilient background work:</b> semaphore-bounded ingest, sha256 de-duplication, and unfinished jobs re-queued on API restart.</li>
+              <li><b>Hybrid RAG:</b> Qdrant dense + BM25 retrieval, filtered per org and job, never storing candidate data.</li>
+              <li><b>Consistency:</b> versioned jobs mark plans stale; single-flight plan generation returns 409 on duplicates.</li>
+              <li><b>Session state machine:</b> one attempt per link, 120 s rejoin grace, silence check-ins and a hard time cap.</li>
+              <li><b>Trust boundaries:</b> the web app never holds LiveKit keys; the agent calls a service-token-protected internal API.</li>
+            </ul>
+          </div>
+          <div class="tags"><i>Next.js 15</i><i>TypeScript</i><i>FastAPI</i><i>SQLAlchemy async</i><i>Alembic</i><i>PostgreSQL</i><i>LiveKit Agents</i><i>Qdrant</i><i>Deepgram Flux</i><i>ElevenLabs</i><i>OpenRouter</i><i>Gemini</i><i>S3</i><i>Docker Compose</i></div>
+        </article>
         <article class="card feature reveal">
           <p class="kicker">Production · Architecture &amp; Scale</p>
           <h3>Healthcare Platform at 6M req/day</h3>
@@ -173,7 +203,7 @@
           </div>
           <div class="tags"><i>AKS</i><i>Docker</i><i>Redis Pub/Sub</i><i>WebSockets</i><i>Azure Blob SAS</i></div>
         </article>
-        <article class="card reveal">
+        <article class="card tall reveal">
           <p class="kicker">Aug — Sep 2026 · Side project</p>
           <h3>MomentMatch</h3>
           <p>AI-powered photo platform with prompt-driven semantic search using <b>InsightFace</b> and <b>CLIP</b> embeddings over a vast library.</p>
