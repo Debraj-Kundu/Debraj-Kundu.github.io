@@ -50,7 +50,7 @@ if (hasGsap && !reduce) {
     gsap.ticker.lagSmoothing(0);
     document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
       const t = document.querySelector(a.getAttribute('href'));
-      if (t) { e.preventDefault(); lenis.scrollTo(t, { offset: -70 }); }
+      if (t) { e.preventDefault(); lenis.scrollTo(t, { offset: -100 }); }
     }));
   }
 
